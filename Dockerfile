@@ -15,8 +15,6 @@ RUN apt-get update && \
 
 EXPOSE 80
 
-VOLUME ["/etc/scalr-server","/opt/scalr-server"]
-
 COPY assets /assets/
 RUN chmod +x /assets/wrapper.sh
 
